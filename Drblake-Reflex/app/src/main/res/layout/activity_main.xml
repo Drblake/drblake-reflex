@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#00F2FF"
+    android:baselineAligned="false"
+    android:id="@+id/mainActivityLayout">
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player1"
+        android:id="@+id/onePlayerButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:textStyle="bold|normal"
+        android:background="#4763DE"
+        android:onClick="onePlayer" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player2"
+        android:id="@+id/twoPlayerButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:background="#DE8D47"
+        android:onClick="twoPlayer" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player3"
+        android:id="@+id/threePlayerButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:background="#DE47D9"
+        android:onClick="threePlayer" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player4"
+        android:id="@+id/fourPlayerButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:background="#E3293F"
+        android:textStyle="bold"
+        android:onClick="fourPlayer" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/statistics"
+        android:id="@+id/statisticsButton"
+        android:textStyle="bold|italic"
+        android:textSize="50sp"
+        android:background="#F4FA3E"
+        android:onClick="statistics" />
+</LinearLayout>

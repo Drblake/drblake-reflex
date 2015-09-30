@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#00F2FF"
+    android:id="@+id/twoPlayerActivityLayout">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:text="@string/player1"
+        android:id="@+id/twoPlayerButtonP1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#4763DE" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:text="@string/player2"
+        android:id="@+id/twoPlayerButtonP2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#DE8D47" />
+</LinearLayout>

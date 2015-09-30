@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#00F2FF"
+    android:id="@+id/onePlayerActivityLayout">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/single_player"
+        android:id="@+id/singlePlayerTitle"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/wait"
+        android:id="@+id/reflexButton"
+        android:layout_gravity="right|bottom"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:allowUndo="false"
+        android:background="#E3293F" />
+</FrameLayout>
