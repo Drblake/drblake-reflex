@@ -30,7 +30,7 @@ public class Two_Player_Activity extends Activity {
 
     public void OnePlayer2(View v) {
         Save_And_Load s = new Save_And_Load();
-        s.SaveWinner("Player 1",2);
+        s.saveWinner("Player 1",2);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -47,7 +47,7 @@ public class Two_Player_Activity extends Activity {
     }
     public void TwoPlayer2(View v) {
         Save_And_Load s = new Save_And_Load();
-        s.SaveWinner("Player 2",2);
+        s.saveWinner("Player 2",2);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

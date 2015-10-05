@@ -26,11 +26,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Random;
-
 
 public class One_Player_Activity extends Activity {
-    public static final String PREFS_NAME = "MyPrefsFile";
     public static final Timer t = new Timer(10,10,2000);
 
     @Override
@@ -38,9 +35,6 @@ public class One_Player_Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one_player);
         //Calls function to display instructions for the game
-        //http://stackoverflow.com/questions/5409595/how-do-i-show-an-alert-dialog-only-on-the-first-run-of-my-application
-        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        boolean dialogShown = settings.getBoolean("dialogShown", false);
         popup();
         //http://stackoverflow.com/questions/1921514/how-to-run-a-runnable-thread-in-android
     }
