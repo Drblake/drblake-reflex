@@ -9,9 +9,13 @@
     <string name="action_settings">Settings</string>
     <string name="single_player">Single Player</string>
     <string name="wait">Wait!</string>
+    <string name="okay">Okay</string>
+    <string name="Instructions">THIS IS INSTRUCTIONAL</string>
     <string name="title_activity_one__player_">One_Player_Activity</string>
     <string name="title_activity_two__player_">Two_Player_Activity</string>
     <string name="title_activity_three__player_">Three_Player_Activity</string>
     <string name="title_activity_four__player_">Four_Player_Activity</string>
     <string name="title_activity_statistics_">Statistics_Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_popup">PopupActivity</string>
 </resources>

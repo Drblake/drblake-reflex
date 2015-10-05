@@ -2,11 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cs.ualberta.ca.drblake_reflex" >
 
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -18,23 +20,28 @@
         </activity>
         <activity
             android:name=".One_Player_Activity"
-            android:label="@string/title_activity_one__player_" >
+            android:label="@string/title_activity_one__player_"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".Two_Player_Activity"
-            android:label="@string/title_activity_two__player_" >
+            android:label="@string/title_activity_two__player_"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".Three_Player_Activity"
-            android:label="@string/title_activity_three__player_" >
+            android:label="@string/title_activity_three__player_"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".Four_Player_Activity"
-            android:label="@string/title_activity_four__player_" >
+            android:label="@string/title_activity_four__player_"
+            android:parentActivityName=".MainActivity" >
         </activity>
         <activity
             android:name=".Statistics_Activity"
-            android:label="@string/title_activity_statistics_" >
+            android:label="@string/title_activity_statistics_"
+            android:parentActivityName=".MainActivity" >
         </activity>
     </application>
 

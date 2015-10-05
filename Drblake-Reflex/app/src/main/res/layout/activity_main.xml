@@ -16,7 +16,7 @@
         android:textSize="70sp"
         android:textStyle="bold|normal"
         android:background="#4763DE"
-        android:onClick="onePlayer" />
+        android:textColor="#000000" />
 
     <Button
         android:layout_marginTop="10dp"
@@ -28,7 +28,7 @@
         android:textSize="70sp"
         android:textStyle="bold"
         android:background="#DE8D47"
-        android:onClick="twoPlayer" />
+        android:textColor="#000000" />
 
     <Button
         android:layout_marginTop="10dp"
@@ -40,7 +40,7 @@
         android:textSize="70sp"
         android:textStyle="bold"
         android:background="#DE47D9"
-        android:onClick="threePlayer" />
+        android:textColor="#000000" />
 
     <Button
         android:layout_marginTop="10dp"
@@ -52,7 +52,7 @@
         android:textSize="70sp"
         android:background="#E3293F"
         android:textStyle="bold"
-        android:onClick="fourPlayer" />
+        android:textColor="#000000" />
 
     <Button
         android:layout_marginTop="30dp"
@@ -63,5 +63,5 @@
         android:textStyle="bold|italic"
         android:textSize="50sp"
         android:background="#F4FA3E"
-        android:onClick="statistics" />
+        android:textColor="#000000" />
 </LinearLayout>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#00F2FF"
-    android:id="@+id/threePlayerActivityLayout">
+    android:id="@+id/threePlayerActivityLayout"
+    tools:context=".Three_Player_Activity">
 
     <Button
         android:layout_width="175dp"
@@ -17,7 +19,8 @@
         android:textStyle="bold"
         android:layout_above="@+id/threePlayerButtonP1"
         android:layout_toLeftOf="@+id/threePlayerButtonP3"
-        android:layout_toStartOf="@+id/threePlayerButtonP3" />
+        android:layout_toStartOf="@+id/threePlayerButtonP3"
+        android:textColor="#000000" />
 
     <Button
         android:layout_width="180dp"
@@ -31,7 +34,8 @@
         android:focusable="false"
         android:background="#DE47D9"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -45,5 +49,6 @@
         android:layout_alignParentEnd="true"
         android:background="#4763DE"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000000" />
 </RelativeLayout>
