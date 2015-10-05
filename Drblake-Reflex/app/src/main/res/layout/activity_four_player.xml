@@ -20,7 +20,8 @@
         android:background="#DE47D9"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="ThreePlayer4" />
 
     <Button
         android:layout_width="190dp"
@@ -34,7 +35,8 @@
         android:background="#E3293F"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="FourPlayer4" />
 
     <Button
         android:layout_width="wrap_content"
@@ -49,7 +51,8 @@
         android:background="#4763DE"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="OnePlayer4" />
 
     <Button
         android:layout_width="190dp"
@@ -63,5 +66,6 @@
         android:layout_alignTop="@+id/fourPlayerButtonP1"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="TwoPlayer4" />
 </RelativeLayout>

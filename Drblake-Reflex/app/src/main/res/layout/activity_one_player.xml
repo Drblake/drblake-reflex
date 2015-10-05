@@ -28,5 +28,6 @@
         android:textSize="70sp"
         android:textStyle="bold"
         android:background="#E3293F"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:onClick="ButtonReset" />
 </FrameLayout>

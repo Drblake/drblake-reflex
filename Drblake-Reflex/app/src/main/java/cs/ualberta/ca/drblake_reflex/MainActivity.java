@@ -11,7 +11,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Set layout to default layout that displays menu
         setContentView(R.layout.activity_main);
+        //Calls function to initialize all on-click listeners for menu buttons
         OnClickListeners();
     }
 
@@ -20,6 +22,7 @@ public class MainActivity extends Activity {
         One_Player.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //http://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity-in-android-studio
+                //changes activity to next One_Player
                 startActivity(new Intent(MainActivity.this, One_Player_Activity.class));
             }
         });
@@ -28,6 +31,7 @@ public class MainActivity extends Activity {
         Two_Player.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //http://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity-in-android-studio
+                //changes activity to next Two_Player
                 startActivity(new Intent(MainActivity.this, Two_Player_Activity.class));
             }
         });
@@ -36,6 +40,7 @@ public class MainActivity extends Activity {
         Three_Player.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //http://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity-in-android-studio
+                //changes activity to next Three_Player
                 startActivity(new Intent(MainActivity.this, Three_Player_Activity.class));
             }
         });
@@ -44,6 +49,7 @@ public class MainActivity extends Activity {
         Four_Player.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //http://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity-in-android-studio
+                //changes activity to next Four_Player
                 startActivity(new Intent(MainActivity.this, Four_Player_Activity.class));
             }
         });
@@ -52,6 +58,7 @@ public class MainActivity extends Activity {
         Statistics.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //http://stackoverflow.com/questions/24610527/how-do-i-get-a-button-to-open-another-activity-in-android-studio
+                //changes activity to next statistics
                 startActivity(new Intent(MainActivity.this, Statistics_Activity.class));
             }
         });
