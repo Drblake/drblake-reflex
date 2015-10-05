@@ -15,6 +15,7 @@ import java.util.Random;
 
 public class One_Player_Activity extends Activity {
     public static final String PREFS_NAME = "MyPrefsFile";
+    public static final Timer t = new Timer(10,10,2000);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +25,20 @@ public class One_Player_Activity extends Activity {
         //http://stackoverflow.com/questions/5409595/how-do-i-show-an-alert-dialog-only-on-the-first-run-of-my-application
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         boolean dialogShown = settings.getBoolean("dialogShown", false);
-        if (!dialogShown) {
-            popup();
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putBoolean("dialogShown", true);
-            editor.commit();
-        }
-        new runnable();
+        popup();
+        //http://stackoverflow.com/questions/1921514/how-to-run-a-runnable-thread-in-android
     }
+    public void begin(){
+        final Handler handler = new Handler();
+        Runnable r = new Runnable() {
+            public void run() {
+                buttonChange();
+                handler.postDelayed(this, t.RandomTime());
+            }
+        };
 
+        handler.postDelayed(r, t.RandomTime());
+    }
 
     private void popup() {
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
@@ -47,44 +53,29 @@ public class One_Player_Activity extends Activity {
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
-                //startGame();
+                begin();
             }
         }).show();
     }
     public void buttonChange(){
+        t.start();
         Button buttonReact = (Button) findViewById(R.id.reflexButton);
         buttonReact.setText("GO!");
         buttonReact.setBackgroundColor(Color.GREEN);
     }
 
     public void ButtonReset(View v) {
+        final long wait = t.ReactionTime();
+        t.Reset();
         //http://stackoverflow.com/questions/17189715/android-button-color-changing-on-onclick
         final Button buttonReact = (Button) findViewById(R.id.reflexButton);
         buttonReact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonReact.setText("WAIT");
+                buttonReact.setText("WAIT "+ wait);
                 buttonReact.setBackgroundColor(Color.RED);
             }
         });
-    }
-
-    public void decideTime(int number) {
-        //http://stackoverflow.com/questions/3072173/how-to-call-a-method-after-a-delay-in-android
-        final Handler newTimer = new Handler();
-        newTimer.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                buttonChange();
-            }
-        }, number);
-    }
-
-    public int random() {
-        //http://stackoverflow.com/questions/6029495/how-can-i-generate-random-number-in-specific-range-in-android
-        Random number = new Random();
-        int result = number.nextInt(2000-10) + 10;
-        return result;
     }
 }
 

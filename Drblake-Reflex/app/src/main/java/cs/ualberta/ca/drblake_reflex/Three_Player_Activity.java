@@ -17,7 +17,8 @@ public class Three_Player_Activity extends Activity {
     }
 
     public void OnePlayer3(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 1",3);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -34,7 +35,8 @@ public class Three_Player_Activity extends Activity {
     }
 
     public void TwoPlayer3(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 2",3);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -51,7 +53,8 @@ public class Three_Player_Activity extends Activity {
     }
 
     public void ThreePlayer3(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 3",3);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

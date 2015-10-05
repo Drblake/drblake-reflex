@@ -16,7 +16,8 @@ public class Four_Player_Activity extends Activity {
         setContentView(R.layout.activity_four_player);
     }
     public void OnePlayer4(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 1",4);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -32,7 +33,8 @@ public class Four_Player_Activity extends Activity {
         }).show();
     }
     public void TwoPlayer4(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 2",4);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -48,7 +50,8 @@ public class Four_Player_Activity extends Activity {
         }).show();
     }
     public void ThreePlayer4(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 3",4);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -64,7 +67,8 @@ public class Four_Player_Activity extends Activity {
         }).show();
     }
     public void FourPlayer4(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 4",4);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);

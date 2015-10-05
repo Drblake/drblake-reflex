@@ -12,13 +12,11 @@ public class Two_Player_Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two_player);
-
-        //SET ALL BUTTON ID'S
-        //ADD WINNNER
     }
 
     public void OnePlayer2(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 1",2);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
@@ -34,7 +32,8 @@ public class Two_Player_Activity extends Activity {
         }).show();
     }
     public void TwoPlayer2(View v) {
-        //SAVE HERE
+        Save_And_Load s = new Save_And_Load();
+        s.SaveWinner("Player 2",2);
         //http://www.tutorialspoint.com//android/android_alert_dialoges.htm
         //Creates an alert dialogue
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
